@@ -34,7 +34,9 @@ font-family: 'Oswald', cursive;
   height: 300px;
 }
 
-.container {
+/* Menu button */
+
+.menu-button-container {
     display: inline-block;
     cursor: pointer;
 }
@@ -48,18 +50,33 @@ font-family: 'Oswald', cursive;
 }
 
 /* Rotate first bar */
-.change .bar1 {
+.menu-button-container:hover .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
     transform: rotate(-45deg) translate(-9px, 6px) ;
 }
 
 /* Fade out the second bar */
-.change .bar2 {
+.menu-button-container:hover .bar2 {
     opacity: 0;
 }
 
 /* Rotate last bar */
-.change .bar3 {
+.menu-button-container:hover .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
     transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.menu-button-container:hover .dropdown-content {
+  display: block;
 }

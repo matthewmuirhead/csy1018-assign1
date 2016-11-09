@@ -5,7 +5,7 @@
     <title>Personal Portfolio Homepage</title>
     <link rel="stylesheet" href="css/styles.css"/>
     <link href="https://fonts.googleapis.com/css?family=Oswald|PT+Sans+Narrow" rel="stylesheet">
-    <script type="text/javascript" src="mysrc.js"></script>
+    <script type="text/javascript" src="javascript/mysrc.js"></script>
   </head>
   <body>
     <div class="header">
@@ -14,20 +14,23 @@
       </header>
     </div>
     <div class="wrapper">
-      <div class="navigation">
-        <div class="container" onclick="myFunction(this)">
+      <div class="navigation"> <!-- Navigation menu -->
+<!-- Menu button -->
+        <div class="menu-button-container" onclick="myFunction(this)">
           <div class="bar1"></div>
           <div class="bar2"></div>
           <div class="bar3"></div>
+          <div class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="cv.html">CV</a>
+            <a href="biography.html">Biography</a>
+          </div>
         </div>
-
-        <p>Home</p>
-        <p>CV</p>
-        <p>Biography</p>
+<!-- End of menu button -->
       </div>
-      <div class="main-content">
+      <div class="main-content"> <!-- Main content of the page -->
 
       </div>
-  </div>
+    </div>
   </body>
 </html>
