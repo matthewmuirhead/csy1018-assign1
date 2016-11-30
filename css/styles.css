@@ -5,7 +5,7 @@ font-family: 'Oswald', cursive;
 .header {
   flex: 1 1 auto;
   display: flex;
-  height: 200px;
+  height: 100px;
   background-color: deepskyblue;
 }
 
@@ -13,7 +13,7 @@ font-family: 'Oswald', cursive;
   display: flex;
   flex-direction: row;
   width:auto;
-  height: 300px;
+  height: 1000px;
 }
 
 .navigation {
@@ -23,7 +23,7 @@ font-family: 'Oswald', cursive;
   margin:auto;
   text-align: center;
   line-height: 2em;
-  height: 300px;
+  height: 1000px;
 }
 
 .main-content {
@@ -31,9 +31,13 @@ font-family: 'Oswald', cursive;
   float: right;
   background-color: #000;
   margin: auto;
-  height: 300px;
+  height: 1000px;
 }
 
+.header-nav {
+  text-align: center;
+  line-height: 3em;
+}
 /* Menu button */
 
 .menu-button-container {
@@ -50,18 +54,18 @@ font-family: 'Oswald', cursive;
 }
 
 /* Rotate first bar */
-.menu-button-container:hover .bar1 {
+.change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
     transform: rotate(-45deg) translate(-9px, 6px) ;
 }
 
 /* Fade out the second bar */
-.menu-button-container:hover .bar2 {
+.change .bar2 {
     opacity: 0;
 }
 
 /* Rotate last bar */
-.menu-button-container:hover .bar3 {
+.change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
     transform: rotate(45deg) translate(-8px, -8px) ;
 }
