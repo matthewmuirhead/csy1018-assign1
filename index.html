@@ -5,39 +5,47 @@
     <title>Personal Portfolio Homepage</title>
     <link rel="stylesheet" href="css/styles.css"/>
     <link href="https://fonts.googleapis.com/css?family=Oswald|PT+Sans+Narrow" rel="stylesheet">
-    <script type="text/javascript" src="javascript/mysrc.js"></script>
   </head>
   <body>
     <div class="header">
       <header>
-        <a href="index.html">Home</a>
-        <a href="cv.html">CV</a>
-        <a href="biography.html">Biography</a>
+        <!-- Mobile navigation -->
+          <div class="menu-button-container">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="nav-tree">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="cv.html">CV</a></li>
+              <li><a href="bioy.html">Biography</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="mobile-title">
+            <h1>Home</h1>
+          </div>
+        <!-- End of mobile navigation -->
+        <!-- Desktop navigation -->
+          <div class="desktop-navigation">
+            <span><a href="index.html">Home</a></span>
+            <span><a href="cv.html">CV</a></span>
+            <span><a href="bio.html">Biography</a></span>
+            <span><a href="contact.html">Contact</a></span>
+          </div>
+        <!-- End of desktop navigation -->
       </header>
     </div>
     <div class="wrapper">
-      <!--<div class="navigation">--> <!-- Navigation menu -->
-<!-- Menu button -->
-        <!--<div class="menu-button-container" onclick="myFunction(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-          <div class="dropdown-content">
-            <p>
-              <a href="index.html">Home</a>
-            </p>
-            <p>
-              <a href="cv.html">CV</a>
-            </p>
-            <p>
-              <a href="biography.html">Biography</a>
-            </p>
-          </div>
-        </div>-->
-<!-- End of menu button -->
-      <!--</div> -->
       <div class="main-content"> <!-- Main content of the page -->
-
+        <p>
+          Hello, I'm Matt, and this is my portfolio.
+          <br>Take and look around and if you like what you see feel free to contact me.
+          <br><br>Below is an image of me and underneath you will
+          <br>find other places where you can find my work.
+        </p>
+        <img class="my-image" src="images/20160923_163055.jpg"/>
+        <a href="htttp://www.github.com" class="github-link" alt="My github"><img class="github-image" src="images/GitHub.png"/></a>
+        <a href="htttp://www.codepen.io" class="codepen-link" alt="My codepen"><img class="codepen-image" src="images/codepen.png"/></a>
       </div>
     </div>
   </body>
