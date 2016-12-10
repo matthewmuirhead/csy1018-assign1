@@ -1,12 +1,22 @@
 body {
-  min-height: 1000vh;
+  min-height: 100vh;
   font-size: 100%;
   font-size: 1em;
   /* equivalent to 16px */
   line-height: 1.25;
   /* equivalent to 20px */
+  background-image: url(../images/traffic.jpg);
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  position: relative;
+  top: 0;
 }
 
+/* source 1 */
 body, h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
 }
@@ -15,7 +25,7 @@ h1 {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* source 1 */
+
 
 body, h1, h2, h3, h4, h5, h6 {
   font-size-adjust: 0.5;
@@ -112,39 +122,178 @@ blockquote {
 /* end of source 1*/
 
 .header {
-  background-image: url(../images/traffic.jpg);
-  top: 0;
-  height: auto;
+  /*background-image: url(../images/traffic.jpg);*/
+  height: 100%;
   width: 100%;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   text-align: center;
   position: relative;
-  top: 0;
-  z-index: -2;
+  margin: 0;
 }
 
 .home {
-  background-color: #000;
-  opacity: 0.5;
   width: 100%;
   height: 100%;
   text-align: center;
   display: flex;
   position: relative;
-  z-index: -1;
-
 }
 
 .titles {
   display: flex;
   flex-direction: column;
-  align-self: center;
+  /*align-self: center;*/
   opacity: 1;
-  color: #FFF;
+  color: #DDD;
   position: relative;
   z-index: 1;
   width: 100%;
+}
+
+.nav-tree {
+  display: none;
+  position: relative;
+  list-style-type: none;
+  line-height: 2.5em;
+  width: 7em;
+  text-align: left;
+  /*padding: 0.5em;*/
+  top: -30px;
+  margin: 0;
+  cursor: pointer;
+  margin-left: 0em;
+}
+
+.menu-container {
+  padding: 2em;
+  height: 40%;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #DDD;
+    margin: 6px 0;
+    transition: 0.4s;
+    position: relative;
+    z-index: 100;
+}
+
+/* Rotate first bar */
+.menu:hover .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.menu:hover .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.menu:hover .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.home-button {
+ color: #79C7D5;
+ box-shadow: 0px -3px 0px 0px #79C7D5, 0px -5px 0px #79C7D5;
+ padding-bottom: 0.5em;
+ padding-left: 0.25em;
+}
+
+.home-button:hover {
+ color: #000;
+ background-color: #79C7D5;
+ box-shadow: 0px -3px 0px 0px #79C7D5, 0px -5px 0px #79C7D5;
+ padding-bottom: 0.5em;
+}
+
+.cv-button {
+  color: #2AAB9D;
+  box-shadow: 0px -3px 0px 0px #2AAB9D, 0px -5px 0px #2AAB9D;
+  padding-bottom: 0.5em;
+  padding-left: 0.25em;
+}
+
+.cv-button:hover {
+  color: #000;
+  background-color: #2AAB9D;
+  box-shadow: 0px -3px 0px 0px #2AAB9D, 0px -5px 0px #2AAB9D;
+  padding-bottom: 0.5em;
+}
+
+.bio-button {
+ color: #AFCF3E;
+ box-shadow: 0px -3px 0px 0px #AFCF3E, 0px -5px 0px #AFCF3E;
+ padding-bottom: 0.5em;
+ padding-left: 0.25em;
+}
+
+.bio-button:hover {
+ color: #000;
+ background-color: #AFCF3E;
+ box-shadow: 0px -3px 0px 0px #AFCF3E, 0px -5px 0px #AFCF3E;
+ padding-bottom: 0.5em;
+}
+
+.contact-button {
+ color: #F2BA3F;
+ box-shadow: 0px -3px 0px 0px #F2BA3F, 0px -5px 0px #F2BA3F;
+ padding-bottom: 0.5em;
+ padding-left: 0.25em;
+}
+
+.contact-button:hover {
+ color: #000;
+ background-color: #F2BA3F;
+ box-shadow: 0px -3px 0px 0px #F2BA3F, 0px -5px 0px #F2BA3F;
+ padding-bottom: 0.5em;
+}
+
+.menu:hover .nav-tree {
+  display: block;
+  cursor: pointer;
+}
+
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 100;
+}
+
+.home-cv-button {
+  background-image: url(../images/screen.jpg);
+  width: 25%;
+  max-width: 500px;
+  min-width: 50px;
+  min-height: 50px;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+}
+
+.home-bio-button {
+  width: 25%;
+  max-width: 100px;
+
+}
+
+.home-contact-button {
+  width: 25%;
+  max-width: 100px;
+}
+
+.main {
+  height: 200px;
 }
 
 /*
