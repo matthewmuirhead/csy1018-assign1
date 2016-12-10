@@ -13,8 +13,8 @@ body {
   background-position: center;
   text-align: center;
   position: relative;
-  top: 0;
   margin: 0;
+  overflow: hidden;
 }
 
 body::before {
@@ -144,6 +144,7 @@ blockquote {
   text-align: center;
   position: relative;
   margin: 0;
+  animation: load-in 2s ease-out 1;
 }
 
 .home {
@@ -184,8 +185,30 @@ blockquote {
 .menu-container {
   padding: 2em;
   height: 40%;
+  width: 15%;
+  float: left;
+  text-align: left;
 }
 
+.social-media {
+  display: flex;
+  float: right;
+  width: 85%;
+  text-align: right;
+  justify-content: flex-end;
+  padding-right: 0.5em;
+  padding-top: 1.5em;
+  align-self: flex-start;
+}
+
+.social-media-images {
+  padding: 10px;
+  padding-top: 15px;
+  width: 30px;
+  height: auto;
+}
+
+/* Source 2 */
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
@@ -212,6 +235,7 @@ blockquote {
     -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
     transform: rotate(45deg) translate(-8px, -8px) ;
 }
+/* End of source 2 */
 
 .home-button {
  color: #79C7D5;
@@ -225,6 +249,7 @@ blockquote {
  background-color: #79C7D5;
  box-shadow: 0px -3px 0px 0px #79C7D5, 0px -5px 0px #79C7D5;
  padding-bottom: 0.5em;
+ animation: animation-rotate 0.5s linear 1;
 }
 
 .cv-button {
@@ -239,6 +264,7 @@ blockquote {
   background-color: #2AAB9D;
   box-shadow: 0px -3px 0px 0px #2AAB9D, 0px -5px 0px #2AAB9D;
   padding-bottom: 0.5em;
+  animation: animation-rotate 0.5s linear 1;
 }
 
 .bio-button {
@@ -253,6 +279,7 @@ blockquote {
  background-color: #AFCF3E;
  box-shadow: 0px -3px 0px 0px #AFCF3E, 0px -5px 0px #AFCF3E;
  padding-bottom: 0.5em;
+ animation: animation-rotate 0.5s linear 1;
 }
 
 .contact-button {
@@ -267,108 +294,42 @@ blockquote {
  background-color: #F2BA3F;
  box-shadow: 0px -3px 0px 0px #F2BA3F, 0px -5px 0px #F2BA3F;
  padding-bottom: 0.5em;
+ animation: animation-rotate 0.5s linear 1;
+}
+
+@keyframes animation-rotate {
+	0% {
+		transform: rotateX(0deg);
+	}
+	50% {
+		transform: rotateX(45deg);
+	}
+  100% {
+		transform: rotateX(0deg);
+	}
+}
+
+@keyframes load-in {
+  0% {
+    transform: translateX(3000px);
+  }
+  100 {
+    transform: translateX(0);
+  }
+}
+
+@keyframes load-out {
+  0% {
+    transform: translateX(0);
+  }
+  100 {
+    transform: translateX(-3000px);
+  }
 }
 
 .menu:hover .nav-tree {
   display: block;
   cursor: pointer;
-}
-
-.button-container {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    z-index: 100;
-    justify-content: center;
-
-}
-
-.main-button {
-  width: auto;
-  height: 25%
-  max-width: 500px;
-  max-width: 500px;
-  min-width: 200px;
-  min-height: 200px;
-  height: auto;
-  background-size: cover;
-  background-position: center;
-  float: left;
-  margin-left: 2%;
-  margin-right: 2%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  position: relative;
-}
-
-.home-cv-button {
-  background-image: url(../images/screen.jpg);
-  z-index: 12;
-  color: #FFF;
-}
-
-.home-cv-button::before {
-  content: "";
-  position: absolute;
-  z-index: 11;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #000;
-  opacity: .4;
-}
-
-.home-bio-button {
-  background-image: url(../images/screen.jpg);
-}
-
-.home-bio-button::before {
-  content: "";
-  position: absolute;
-  z-index: 11;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #000;
-  opacity: .4;
-}
-
-.home-contact-button {
-  background-image: url(../images/screen.jpg);
-  opacity: .4;
-}
-
-.home-contact-button::before {
-  content: "";
-  position: absolute;
-  z-index: 11;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #000;
-  opacity: .8;
-}
-
-.home-contact-button:hover {
-
-  cursor: pointer;
-}
-
-.home-contact-button:hover .fade-4 {
-  opacity: 1;
-  z-index: 12;
-  color: #FFF;
-}
-
-.fade-4 {
-  opacity: .4;
-  z-index: 12;
-  color: #FFF;
 }
 
 .read-more {
@@ -377,7 +338,7 @@ blockquote {
   margin-left: 0.2em;
   text-decoration: none;
   color: #FFF;
-  
+
 }
 
 .arrow-adjust {
@@ -388,6 +349,10 @@ blockquote {
 .read-more:hover {
   opacity: 1;
   cursor: pointer;
+}
+
+.read-more:active {
+  animation: load-in 2s ease-out 1;
 }
 
 .horizontal-container {
@@ -401,11 +366,17 @@ a {
   text-decoration: none;
 }
 
+.height-50 {
+  height: 50%;
+}
+
+@media (min-width: 43.75em) {
+
+}
+
 /*
 Source list
 
-1:
-Article title:	A More Modern Scale for Web Typography - Typecast
-Website title:	Typecast
-URL:	http://typecast.com/blog/a-more-modern-scale-for-web-typography
+1: Typecast. (2016). A More Modern Scale for Web Typography - Typecast. [online] Available at: http://typecast.com/blog/a-more-modern-scale-for-web-typography [Accessed 10 Dec. 2016].
+2: W3schools.com. (2016). How To Create a Menu Icon. [online] Available at: http://www.w3schools.com/howto/howto_css_menu_icon.asp [Accessed 10 Dec. 2016].
 */
