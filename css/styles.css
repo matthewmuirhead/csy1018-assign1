@@ -14,6 +14,19 @@ body {
   text-align: center;
   position: relative;
   top: 0;
+  margin: 0;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  opacity: .6;
 }
 
 /* source 1 */
@@ -123,6 +136,7 @@ blockquote {
 
 .header {
   /*background-image: url(../images/traffic.jpg);*/
+  min-height: 600px;
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -134,10 +148,12 @@ blockquote {
 
 .home {
   width: 100%;
-  height: 100%;
+  height: 75%;
   text-align: center;
   display: flex;
+  align-items: center;
   position: relative;
+  justify-content: center;
 }
 
 .titles {
@@ -258,42 +274,131 @@ blockquote {
   cursor: pointer;
 }
 
-a {
-  list-style-type: none;
-  text-decoration: none;
-}
-
 .button-container {
     display: flex;
     flex-direction: row;
     position: relative;
     z-index: 100;
+    justify-content: center;
+
+}
+
+.main-button {
+  width: auto;
+  height: 25%
+  max-width: 500px;
+  max-width: 500px;
+  min-width: 200px;
+  min-height: 200px;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  float: left;
+  margin-left: 2%;
+  margin-right: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
 }
 
 .home-cv-button {
   background-image: url(../images/screen.jpg);
-  width: 25%;
-  max-width: 500px;
-  min-width: 50px;
-  min-height: 50px;
-  height: auto;
-  background-size: cover;
-  background-position: center;
+  z-index: 12;
+  color: #FFF;
+}
+
+.home-cv-button::before {
+  content: "";
+  position: absolute;
+  z-index: 11;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  opacity: .4;
 }
 
 .home-bio-button {
-  width: 25%;
-  max-width: 100px;
+  background-image: url(../images/screen.jpg);
+}
 
+.home-bio-button::before {
+  content: "";
+  position: absolute;
+  z-index: 11;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  opacity: .4;
 }
 
 .home-contact-button {
-  width: 25%;
-  max-width: 100px;
+  background-image: url(../images/screen.jpg);
+  opacity: .4;
 }
 
-.main {
-  height: 200px;
+.home-contact-button::before {
+  content: "";
+  position: absolute;
+  z-index: 11;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  opacity: .8;
+}
+
+.home-contact-button:hover {
+
+  cursor: pointer;
+}
+
+.home-contact-button:hover .fade-4 {
+  opacity: 1;
+  z-index: 12;
+  color: #FFF;
+}
+
+.fade-4 {
+  opacity: .4;
+  z-index: 12;
+  color: #FFF;
+}
+
+.read-more {
+  font-style: italic;
+  opacity: 0.6;
+  margin-left: 0.2em;
+  text-decoration: none;
+  color: #FFF;
+  
+}
+
+.arrow-adjust {
+  margin-left: 8px;
+  margin-top: 24px;
+}
+
+.read-more:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.horizontal-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+a {
+  list-style-type: none;
+  text-decoration: none;
 }
 
 /*
