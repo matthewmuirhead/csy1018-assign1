@@ -1,9 +1,30 @@
+/*Matthew James Muirhead*/
+/*Student Number: 16424341*/
+
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  line-height: 100%;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1.5em;
+  color: #333;
+}
+
+/********************************/
+/*            START             */
+/*          OF HOMEPAGE         */
+/*             CSS              */
+/********************************/
+
+#homepage {
   min-height: 100vh;
   font-size: 100%;
-  font-size: 1em;
+  font-size: 1em; /* Source 1 */
   /* equivalent to 16px */
-  line-height: 1.25;
+  line-height: 1.25; /* Source 1 */
   /* equivalent to 20px */
   background-image: url(../images/traffic.jpg);
   top: 0;
@@ -34,7 +55,7 @@ body, h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
 }
 
-h1 {
+h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -190,7 +211,7 @@ blockquote {
   text-align: left;
 }
 
-.social-media {
+.social-media-main {
   display: flex;
   float: right;
   width: 85%;
@@ -351,10 +372,6 @@ blockquote {
   cursor: pointer;
 }
 
-.read-more:active {
-  animation: load-in 2s ease-out 1;
-}
-
 .horizontal-container {
   display: flex;
   flex-direction: row;
@@ -370,13 +387,134 @@ a {
   height: 50%;
 }
 
+/********************************/
+/*                              */
+/*       END OF HOMEPAGE        */
+/*            CSS               */
+/********************************/
+
+.nav {
+  order: -1;
+  padding: 1em;
+  background: #7DD6F6;
+  text-align: left;
+  padding-left: 11em;
+}
+
+.footer {
+  padding: 0.2em;
+  background: #2D2E2F;
+  text-align: center;
+  color: #F3F4F5;
+  height: 60px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+
+.main {
+  padding: 1em;
+  background: #F3F4F5;
+  text-align: center;
+}
+
+.aside {
+  padding: 1em;
+  text-align: center;
+  background: #D8E3FD;
+  background-size: cover;
+  background-position: top;
+  background-size: auto 100%;
+}
+
+.aside-bio {
+  background-image: url(../images/l1sqxjxbgd0-gabriel-santiago.jpg);
+}
+
+.aside-cv {
+  background-image: url(../images/urmkfvtk3qw-caleb-george.jpg);
+}
+
+.aside-contact {
+  background-image: url(../images/tzdmeykuboo-paul-genyk.jpg);
+}
+
+.desktop-nav {
+  position: relative;
+  list-style-type: none;
+  line-height: 2.5em;
+  width: 80%;
+  text-align: left;
+  /*padding: 0.5em;*/
+  top: 30px;
+  margin: 0;
+  cursor: pointer;
+  padding-left: 10%;
+}
+
+.nav-button {
+  color: #7DD6F6;
+  box-shadow: 0px -3px 0px 0px #7DD6F6, 0px -5px 0px #7DD6F6;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+}
+
+.nav-button:hover {
+ color: #000;
+ background-color: #26BBF0;
+ box-shadow: 0px -3px 0px 0px #1790BB, 0px -5px 0px #1790BB;
+ padding-bottom: 0.5em;
+ animation: animation-rotate 0.5s linear 1;
+}
+
+.social-media {
+  display: flex;
+  float: right;
+  width: 100%;
+  text-align: right;
+  justify-content: flex-end;
+  padding-right: 0.5em;
+  align-self: flex-start;
+}
+
+@media (max-width: 30em) {
+  .main {
+    flex: 1 0 auto;
+  }
+}
+
+@media (min-width: 30em) {
+  .nav {
+    display: block;
+  }
+  .wrapper {
+    flex-direction: row;
+  }
+  .main {
+    flex: 1 1 auto;
+    width: 80%
+  }
+  .aside {
+    width: 20%;
+  }
+}
+
 @media (min-width: 43.75em) {
 
 }
 
-/*
+@media (min-width: 56.25em) {
+
+}
+
+/************************************************************************************
+
 Source list
 
 1: Typecast. (2016). A More Modern Scale for Web Typography - Typecast. [online] Available at: http://typecast.com/blog/a-more-modern-scale-for-web-typography [Accessed 10 Dec. 2016].
 2: W3schools.com. (2016). How To Create a Menu Icon. [online] Available at: http://www.w3schools.com/howto/howto_css_menu_icon.asp [Accessed 10 Dec. 2016].
-*/
+
+************************************************************************************/

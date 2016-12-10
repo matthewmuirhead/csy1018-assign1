@@ -1,3 +1,3 @@
 # csy1018-assign1
 
-Time spent: 12 hour
+Time spent: 14 hours
