@@ -3,7 +3,7 @@
 Matthew James Muirhead
 Student Number: 16424341
 
-Time spent: 14 hours
+Time spent: 20 hours
 
 Guidelines
 You must adhere to the following guidelines:
