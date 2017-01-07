@@ -626,6 +626,23 @@ form {
   .main {
     flex: 1 0 auto;
   }
+  .aside {
+    padding-bottom: 3em;
+    background-size: cover;
+  }
+  .vertical-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .gcse {
+    width: 100%;
+  }
+  .a-level {
+    width: 100%;
+  }
+  .higher-education {
+    width: 100%;
+  }
 }
 
 @media (min-width: 30em) {
@@ -641,6 +658,7 @@ form {
   }
   .aside {
     width: 20%;
+    min-width: 7em;
   }
 }
 
