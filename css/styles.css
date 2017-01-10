@@ -215,7 +215,7 @@ blockquote {
   top: -30px;
   margin: 0;
   cursor: pointer;
-  margin-left: 0em;
+  margin-left: 2.3em;
 }
 
 .menu-container {
@@ -251,6 +251,7 @@ blockquote {
   padding-top: 18px;
 }
 
+/* Start of menu button */
 /* Source 2 */
 .bar1, .bar2, .bar3 {
     width: 35px;
@@ -283,6 +284,8 @@ blockquote {
  box-shadow: 0px -3px 0px 0px #79C7D5, 0px -5px 0px #79C7D5;
  padding-bottom: 0.5em;
  padding-left: 0.25em;
+ -webkit-margin-before: 0em; /* Overwrites default top spacing */
+ -webkit-margin-after: 0em; /* Overwrites default bottom spacing */
 }
 
 .home-button:hover {
@@ -298,6 +301,8 @@ blockquote {
   box-shadow: 0px -3px 0px 0px #2AAB9D, 0px -5px 0px #2AAB9D;
   padding-bottom: 0.5em;
   padding-left: 0.25em;
+  -webkit-margin-before: 0em; /* Overwrites default top spacing */
+  -webkit-margin-after: 0em; /* Overwrites default bottom spacing */
 }
 
 .cv-button:hover {
@@ -313,6 +318,8 @@ blockquote {
  box-shadow: 0px -3px 0px 0px #AFCF3E, 0px -5px 0px #AFCF3E;
  padding-bottom: 0.5em;
  padding-left: 0.25em;
+ -webkit-margin-before: 0em; /* Overwrites default top spacing */
+ -webkit-margin-after: 0em; /* Overwrites default bottom spacing */
 }
 
 .bio-button:hover {
@@ -328,6 +335,8 @@ blockquote {
  box-shadow: 0px -3px 0px 0px #F2BA3F, 0px -5px 0px #F2BA3F;
  padding-bottom: 0.5em;
  padding-left: 0.25em;
+ -webkit-margin-before: 0em; /* Overwrites default top spacing */
+ -webkit-margin-after: 0em; /* Overwrites default bottom spacing */
 }
 
 .contact-button:hover {
@@ -337,6 +346,7 @@ blockquote {
  padding-bottom: 0.5em;
  animation: animation-rotate 0.5s linear 1;
 }
+/* End of menu button */
 
 @keyframes animation-rotate {
 	0% {
@@ -380,22 +390,22 @@ blockquote {
 }
 
 .arrow-adjust {
-  margin-left: 8px;
+  margin-left: 8px; /* Aligns the arrow on the homepage with the text*/
   margin-top: 24px;
 }
 
-.horizontal-container-homepage {
+.horizontal-container-homepage { /* Flexbox container in horizontal format */
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
 li {
-  list-style-type: none;
+  list-style-type: none; /* Defaults lists to have no bullet point */
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none; /* Deaults links to have no underline */
 }
 
 /********************************/
@@ -406,13 +416,12 @@ a {
 
 .nav {
   order: -1;
-
   background: #7DD6F6;
   text-align: left;
   height: 6em;
 }
 
-  .logo-container {
+.logo-container {
     width: 2em;
     padding: 1em;
 }
@@ -437,7 +446,6 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-
 }
 
 .footer {
@@ -509,6 +517,8 @@ a {
   box-shadow: 0px -3px 0px 0px #7DD6F6, 0px -5px 0px #7DD6F6;
   padding-bottom: 0.5em;
   padding-left: 1em;
+  -webkit-margin-before: 0em; /* Overwrites default top spacing */
+  -webkit-margin-after: 0em; /* Overwrites default bottom spacing */
 }
 
 .nav-button:hover {
