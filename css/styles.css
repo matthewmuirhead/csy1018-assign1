@@ -186,7 +186,7 @@ blockquote {
 }
 /* end of source 1*/
 
-.header {
+.header-homepage {
   /*background-image: url(../images/traffic.jpg);*/
   min-height: 600px;
   height: 100%;
@@ -196,7 +196,6 @@ blockquote {
   text-align: center;
   position: relative;
   margin: 0;
-  animation: load-in 1s ease-out 1;
 }
 
 .titles {
@@ -265,8 +264,7 @@ blockquote {
 
 /* Rotate first bar */
 .menu:hover .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px);
 }
 
 /* Fade out the second bar */
@@ -276,8 +274,7 @@ blockquote {
 
 /* Rotate last bar */
 .menu:hover .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-    transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px);
 }
 /* End of source 2 */
 
@@ -358,18 +355,9 @@ blockquote {
     transform: translateX(100px);
     opacity: 0;
   }
-  100 {
+  100% {
     transform: translateX(0);
     opacity: 1;
-  }
-}
-
-@keyframes load-out {
-  0% {
-    transform: translateX(0);
-  }
-  100 {
-    transform: translateX(-3000px);
   }
 }
 
@@ -418,10 +406,38 @@ a {
 
 .nav {
   order: -1;
-  padding: 1em;
+
   background: #7DD6F6;
   text-align: left;
-  padding-left: 20%;
+  height: 6em;
+}
+
+  .logo-container {
+    width: 2em;
+    padding: 1em;
+}
+
+.logo {
+  height: 2em;
+  transform: translateY(55%);
+}
+
+.title-container {
+  margin-left: 2em;
+  width: auto;
+  padding: 1em;
+}
+
+.title-container h3 {
+  font-size: 1.5em;
+  line-height: 1.25;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
 }
 
 .footer {
@@ -563,15 +579,7 @@ p {
   padding: 0;
 }
 
-.gcse {
-  width: 25%;
-}
-
-.a-level {
-  width: 25%;
-}
-
-.higher-education {
+.gcse, .a-level, .higher-education {
   width: 25%;
 }
 
@@ -668,6 +676,10 @@ form {
 
 @media (min-width: 56.25em) {
 
+}
+
+.header-homepage {
+  animation: load-in 1s ease-out 1;
 }
 
 /************************************************************************************
