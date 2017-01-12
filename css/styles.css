@@ -2,10 +2,10 @@
 /*Student Number: 16424341*/
 
 body {
-  display: flex;
+  display: flex; /* Defaults the display for all pages to flex */
   flex-direction: column;
   min-height: 100vh;
-  margin: 0;
+  margin: 0; /* Removes any margins placed by the browser */
   line-height: 100%;
   text-align: center;
   font-family: sans-serif;
@@ -28,14 +28,14 @@ body {
   /* equivalent to 20px */
   background-image: url(../images/traffic.jpg);
   top: 0;
-  height: 100%;
+  height: 100%; /* Sets the page to fit the browser window */
   width: 100%;
   background-size: cover;
   background-position: center;
   text-align: center;
   position: relative;
   margin: 0;
-  overflow: hidden;
+  overflow: hidden; /* Hides any of the image overflowing from the container*/
   color: #DBDFE1;
 }
 
@@ -54,11 +54,11 @@ body {
 /* End of source 3 */
 
 body, h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif; /* Sets default font for all text to roboto with a backup of sans-serif*/
 }
 
 h1, h2, h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif; /* Sets default font for h1, h2 and h3 to roboto with a backup of sans-serif*/
 }
 
 /* source 1 */
@@ -204,10 +204,10 @@ blockquote {
   position: relative;
 }
 
-.nav-tree {
+.nav-tree { /* Dropdown navigation menu */
   display: none;
   position: relative;
-  list-style-type: none;
+  list-style-type: none; /* Removes bullet points from the list */
   line-height: 2.5em;
   width: 7em;
   text-align: left;
@@ -215,10 +215,10 @@ blockquote {
   top: -30px;
   margin: 0;
   cursor: pointer;
-  margin-left: 2.3em;
+  margin-left: 2.3em; /* Moves the menu to the right side of the button */
 }
 
-.menu-container {
+.menu-container { /* Sets the location of the menu button */
   padding: 2em;
   height: 40%;
   width: 15%;
@@ -226,7 +226,7 @@ blockquote {
   text-align: left;
 }
 
-.social-media-main {
+.social-media-main { /* Sets the location of the social media buttons */
   display: flex;
   float: right;
   width: 85%;
@@ -288,12 +288,12 @@ blockquote {
  -webkit-margin-after: 0em; /* Overwrites default bottom spacing */
 }
 
-.home-button:hover {
+.home-button:hover { /* Changes state of button when hovered over */
  color: #000;
- background-color: #79C7D5;
+ background-color: #79C7D5; /* Makes button a darker shade */
  box-shadow: 0px -3px 0px 0px #79C7D5, 0px -5px 0px #79C7D5;
  padding-bottom: 0.5em;
- animation: animation-rotate 0.5s linear 1;
+ animation: animation-rotate 0.5s linear 1; /* Rotates button */
 }
 
 .cv-button {
@@ -305,12 +305,12 @@ blockquote {
   -webkit-margin-after: 0em; /* Overwrites default bottom spacing */
 }
 
-.cv-button:hover {
+.cv-button:hover { /* Changes state of button when hovered over */
   color: #000;
-  background-color: #2AAB9D;
+  background-color: #2AAB9D; /* Makes button a darker shade */
   box-shadow: 0px -3px 0px 0px #2AAB9D, 0px -5px 0px #2AAB9D;
   padding-bottom: 0.5em;
-  animation: animation-rotate 0.5s linear 1;
+  animation: animation-rotate 0.5s linear 1; /* Rotates button */
 }
 
 .bio-button {
@@ -322,12 +322,12 @@ blockquote {
  -webkit-margin-after: 0em; /* Overwrites default bottom spacing */
 }
 
-.bio-button:hover {
+.bio-button:hover { /* Changes state of button when hovered over */
  color: #000;
- background-color: #AFCF3E;
+ background-color: #AFCF3E; /* Makes button a darker shade */
  box-shadow: 0px -3px 0px 0px #AFCF3E, 0px -5px 0px #AFCF3E;
  padding-bottom: 0.5em;
- animation: animation-rotate 0.5s linear 1;
+ animation: animation-rotate 0.5s linear 1; /* Rotates button */
 }
 
 .contact-button {
@@ -339,16 +339,16 @@ blockquote {
  -webkit-margin-after: 0em; /* Overwrites default bottom spacing */
 }
 
-.contact-button:hover {
+.contact-button:hover { /* Changes state of button when hovered over */
  color: #000;
- background-color: #F2BA3F;
+ background-color: #F2BA3F; /* Makes button a darker shade */
  box-shadow: 0px -3px 0px 0px #F2BA3F, 0px -5px 0px #F2BA3F;
  padding-bottom: 0.5em;
- animation: animation-rotate 0.5s linear 1;
+ animation: animation-rotate 0.5s linear 1; /* Rotates button */
 }
 /* End of menu button */
 
-@keyframes animation-rotate {
+@keyframes animation-rotate { /* Rotate animation for the buttons */
 	0% {
 		transform: rotateX(0deg);
 	}
@@ -360,7 +360,7 @@ blockquote {
 	}
 }
 
-@keyframes load-in {
+@keyframes load-in { /* Fade and slide in for homepage*/
   0% {
     transform: translateX(100px);
     opacity: 0;
@@ -385,7 +385,7 @@ blockquote {
 }
 
 .read-more:hover {
-  opacity: 1;
+  opacity: 1; /* Highlights text when hovered */
   cursor: pointer;
 }
 
@@ -437,18 +437,18 @@ a {
   padding: 1em;
 }
 
-.title-container h3 {
+.title-container h3 { /* Keeps the font size uniform when h3 is used inside title-container */
   font-size: 1.5em;
   line-height: 1.25;
 }
 
-.header {
+.header { /* Header */
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
 
-.footer {
+.footer { /* Footer */
   padding: 0.2em;
   background: #005C7D;
   text-align: center;
@@ -456,14 +456,14 @@ a {
   height: 60px;
 }
 
-.wrapper {
+.wrapper { /* contains main and aside */
   display: flex;
   flex-direction: column;
   flex: 1 0 auto;
   min-height: 100%;
 }
 
-.main {
+.main { /* Main content */
   padding: 1em;
   background: #F3F4F5;
   text-align: left;
@@ -471,14 +471,14 @@ a {
   padding-right: 2em;
 }
 
-.bottom-image {
+.bottom-image { /* Image at the bottom of the bio page */
   background-image: url(../images/599XX-FXX-K-tall.png);
   background-size: cover;
   background-position: bottom;
   padding-bottom: 7em;
 }
 
-.aside {
+.aside { /* Navigation section */
   padding: 1em;
   text-align: center;
   background: #D8E3FD;
@@ -487,19 +487,19 @@ a {
   background-size: auto 100%;
 }
 
-.aside-bio {
+.aside-bio { /* Navigation background for bio */
   background-image: url(../images/l1sqxjxbgd0-gabriel-santiago.jpg);
 }
 
-.aside-cv {
+.aside-cv { /* Navigation background for cv */
   background-image: url(../images/urmkfvtk3qw-caleb-george.jpg);
 }
 
-.aside-contact {
+.aside-contact { /* Navigation background for contact */
   background-image: url(../images/tzdmeykuboo-paul-genyk.jpg);
 }
 
-.desktop-nav {
+.desktop-nav { /* navigation layout in desktop layout */
   position: relative;
   list-style-type: none;
   line-height: 2.5em;
@@ -512,7 +512,7 @@ a {
   padding-left: 10%;
 }
 
-.nav-button {
+.nav-button { /* All buttons in the nav menu */
   color: #7DD6F6;
   box-shadow: 0px -3px 0px 0px #7DD6F6, 0px -5px 0px #7DD6F6;
   padding-bottom: 0.5em;
@@ -529,7 +529,7 @@ a {
  animation: animation-rotate 0.5s linear 1;
 }
 
-.social-media {
+.social-media { /* Social media buttons in footers */
   display: flex;
   float: right;
   width: 100%;
@@ -547,18 +547,11 @@ p {
   text-align: left;
   padding-left: 2em;
 }
-/*
-.picture-of-me-container {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  align-items: center;
-  overflow: hidden;
-  min-height: 80%;
-  background-image: url(../images/20160923_113708-2.png);
-  background-size: cover;
-  background-position: center;
-}*/
+
+.picture-of-me { /* picture of me on homepage */
+    height: 8em;
+    margin-top: 7em;
+}
 
 .section-header {
   text-align: left;
@@ -569,7 +562,7 @@ p {
   transform: translate(-50%);
 }
 
-.horizontal-container {
+.horizontal-container { /* horizontal flexbox */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -640,7 +633,7 @@ form {
   float: right
 }
 
-@media (max-width: 30em) {
+@media (max-width: 30em) { /* Mobile page modifications */
   .main {
     flex: 1 0 auto;
   }
@@ -663,7 +656,7 @@ form {
   }
 }
 
-@media (min-width: 30em) {
+@media (min-width: 30em) { /* Desktop modifications */
   .nav {
     display: block;
   }
@@ -688,7 +681,7 @@ form {
 
 }
 
-.header-homepage {
+.header-homepage, .titles {
   animation: load-in 1s ease-out 1;
 }
 
